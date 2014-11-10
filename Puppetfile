@@ -59,3 +59,15 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "osx",           "2.7.1"
+github "iterm2",        "1.2.2"
+github "zsh",           "1.0.0"
+github "ohmyzsh",       "1.0.0", :repo => "erivello/puppet-ohmyzsh"
+github "chrome",        "1.2.0"
+github "firefox",       "1.2.3"
+github "sublime_text",  "1.0.2"
+github "virtualbox",    "1.0.13"
+github "alfred",        "1.3.1"
+github "bartender",     "1.0.0"
+github "transmit",      "1.0.2"

@@ -55,8 +55,18 @@ node default {
   # core modules, needed for most things
   include dnsmasq
   include git
-  #include hub
+  include hub
   include nginx
+
+  include chrome
+  include firefox
+  include iterm2::stable
+  include zsh
+  include ohmyzsh
+  include sublime_text
+  include virtualbox
+  include alfred
+  include bartender
 
   # fail if FDE is not enabled
   #if $::root_encrypted == 'no' {
@@ -76,6 +86,38 @@ node default {
   ruby::version { '1.9.3': }
   ruby::version { '2.0.0': }
   ruby::version { '2.1.2': }
+
+  $version = "2.1.2"
+  ruby_gem { "bundler for ${version}":
+    gem          => 'bundler',
+    version      => '~> 1.7.0',
+    ruby_version => $version,
+  }
+  ruby_gem { "foreman for ${version}":
+    gem          => 'foreman',
+    version      => '~> 0.75.0',
+    ruby_version => $version,
+  }
+  ruby_gem { "forward for ${version}":
+    gem          => 'forward',
+    version      => '~> 0.3.3',
+    ruby_version => $version,
+  }
+  ruby_gem { "scss-lint for ${version}":
+    gem          => 'scss-lint',
+    version      => '~> 0.29.0',
+    ruby_version => $version,
+  }
+  ruby_gem { "sass for ${version}":
+    gem          => 'sass',
+    version      => '~> 3.4.7',
+    ruby_version => $version,
+  }
+  ruby_gem { "cocoapods for ${version}":
+    gem          => 'cocoapods',
+    version      => '~> 0.34.4',
+    ruby_version => $version,
+  }
 
   # common, useful packages
   package {

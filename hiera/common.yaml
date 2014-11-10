@@ -9,5 +9,4 @@
 
 # See https://github.com/boxen/puppet-ruby for docs
 ruby::provider: "chruby"
-ruby::version::alias:
-  "2.1": 2.1.4
+ruby::build::ensure: 'v20141028'
