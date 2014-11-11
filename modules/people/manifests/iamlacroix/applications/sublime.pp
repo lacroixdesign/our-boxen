@@ -1,6 +1,5 @@
 class people::iamlacroix::applications::sublime {
   require people::iamlacroix::config
-  # require sublime_text
 
   include sublime_text
 

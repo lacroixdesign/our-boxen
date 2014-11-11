@@ -66,19 +66,21 @@ node default {
   include dropbox
   include bartender
 
-  # fail if FDE is not enabled
-  #if $::root_encrypted == 'no' {
-  #  fail('Please enable full disk encryption and try again')
-  #}
-
   # node versions
-  #include nodejs::v0_6
   include nodejs::v0_8
   include nodejs::v0_10
 
+  $default_node = 'v0.10'
   class { 'nodejs::global':
-    version => 'v0.10'
+    version => $default_node
   }
+
+  nodejs::module { 'bower':     node_version => $default_node }
+  nodejs::module { 'gulp':      node_version => $default_node }
+  nodejs::module { 'jshint':    node_version => $default_node }
+  nodejs::module { 'uglify-js': node_version => $default_node }
+  nodejs::module { 'grunt-cli': node_version => $default_node }
+  nodejs::module { 'weinre':    node_version => $default_node }
 
   # default ruby versions
   ruby::version { '1.9.3': }
