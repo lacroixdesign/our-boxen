@@ -4,4 +4,5 @@ class people::iamlacroix::config {
 
   include people::iamlacroix::config::shell
   include people::iamlacroix::config::git
+  include people::iamlacroix::config::vim
 }
