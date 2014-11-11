@@ -75,6 +75,9 @@ github "alfred",        "1.3.1"
 github "bartender",     "1.0.0"
 github "dropbox",       "1.4.1"
 
-github "transmit",      "1.0.2"
-github "cloudapp",      "1.0.2"
-github "skype",         "1.0.9"
+github "imageoptim",    "0.0.2"
+
+github "transmit",       "1.0.2"
+github "skype",          "1.0.9"
+github "github_for_mac", "1.0.3"
+github "fluid",          "1.0.2"
