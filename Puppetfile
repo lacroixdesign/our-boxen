@@ -61,6 +61,9 @@ github "xquartz",     "1.2.1"
 # https://github.com/boxen.
 
 github "osx",           "2.7.1"
+github "java",          "1.7.1"
+github "fonts",         "0.0.3"
+
 github "iterm2",        "1.2.2"
 github "zsh",           "1.0.0"
 github "ohmyzsh",       "1.0.0", :repo => "erivello/puppet-ohmyzsh"
@@ -70,4 +73,8 @@ github "sublime_text",  "1.0.2"
 github "virtualbox",    "1.0.13"
 github "alfred",        "1.3.1"
 github "bartender",     "1.0.0"
+github "dropbox",       "1.4.1"
+
 github "transmit",      "1.0.2"
+github "cloudapp",      "1.0.2"
+github "skype",         "1.0.9"
