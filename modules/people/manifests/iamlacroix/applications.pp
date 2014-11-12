@@ -1,5 +1,6 @@
 class people::iamlacroix::applications {
   include people::iamlacroix::applications::sublime
+  include people::iamlacroix::applications::atom_editor
 
   include cloudapp
   include transmit

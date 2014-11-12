@@ -4,34 +4,34 @@ class people::iamlacroix::applications::sublime {
   include sublime_text
 
   $home = $people::iamlacroix::config::home
+  $drop = $people::iamlacroix::config::dropbox_dir
+  $sync = $people::iamlacroix::config::sync_dir
 
-  $st3_support_dir = "${home}/Library/Application Support/Sublime Text 3"
-  $st3_sync_dirs = [ "${home}/Dropbox/",
-                     "${home}/Dropbox/Sync",
-                     "${home}/Dropbox/Sync/SublimeText3",
-                     "${home}/Dropbox/Sync/SublimeText3/Packages",
-                     "${home}/Dropbox/Sync/SublimeText3/Installed Packages"
-                   ]
+  $support_dir = "${home}/Library/Application Support/Sublime Text 3"
+  $sync_dirs = [ "${sync}/SublimeText3",
+                 "${sync}/SublimeText3/Packages",
+                 "${sync}/SublimeText3/Installed Packages"
+               ]
 
-  file { $st3_support_dir:
+  file { $support_dir:
     ensure => "directory"
   }
 
-  file { $st3_sync_dirs:
+  file { $sync_dirs:
     ensure => "directory"
   }
 
-  file { "${st3_support_dir}/Packages":
+  file { "${support_dir}/Packages":
     ensure  => link,
-    target  => "${home}/Dropbox/Sync/SublimeText3/Packages",
-    require => [ Package['Sublime Text'], File[$st3_support_dir, $st3_sync_dirs] ],
+    target  => "${sync}/SublimeText3/Packages",
+    require => [ Package['Sublime Text'], File[$support_dir, $drop, $sync, $sync_dirs] ],
     force   => "true"
   }
 
-  file { "${st3_support_dir}/Installed Packages":
+  file { "${support_dir}/Installed Packages":
     ensure  => link,
-    target  => "${home}/Dropbox/Sync/SublimeText3/Installed Packages",
-    require => [ Package['Sublime Text'], File[$st3_support_dir, $st3_sync_dirs] ],
+    target  => "${sync}/SublimeText3/Installed Packages",
+    require => [ Package['Sublime Text'], File[$support_dir, $drop, $sync, $sync_dirs] ],
     force   => "true"
   }
 }
