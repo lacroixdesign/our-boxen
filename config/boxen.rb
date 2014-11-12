@@ -7,6 +7,9 @@
 # Change the repo boxen will use.
 ENV['BOXEN_REPO_NAME'] = 'lacroixdesign/our-boxen'
 
+# Compile Rubies locally
+# ENV['SKIP_PRECOMPILED_RUBIES'] = 'true'
+
 # Boxen binary packaging
 # ENV["BOXEN_S3_ACCESS_KEY"] = ''
 # ENV["BOXEN_S3_SECRET_KEY"] = ''
