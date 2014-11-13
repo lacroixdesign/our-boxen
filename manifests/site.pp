@@ -55,12 +55,16 @@ node default {
   include hub
   include nginx
   include java
+  include memcached
+  include memcached::lib
+  include setup_php
 
   # core apps & tools
   include chrome
   include firefox
   include iterm2::stable
   include virtualbox
+  include heroku
 
   include alfred
   include dropbox
@@ -72,23 +76,23 @@ node default {
   include mysql
   include mongodb
 
-  # node versions
+  # node
   include nodejs::v0_8
   include nodejs::v0_10
 
-  $default_node = 'v0.10'
+  $node_version = 'v0.10'
   class { 'nodejs::global':
-    version => $default_node
+    version => $node_version
   }
 
-  nodejs::module { 'bower':     node_version => $default_node }
-  nodejs::module { 'gulp':      node_version => $default_node }
-  nodejs::module { 'jshint':    node_version => $default_node }
-  nodejs::module { 'uglify-js': node_version => $default_node }
-  nodejs::module { 'grunt-cli': node_version => $default_node }
-  nodejs::module { 'weinre':    node_version => $default_node }
+  nodejs::module { 'bower':     node_version => $node_version }
+  nodejs::module { 'gulp':      node_version => $node_version }
+  nodejs::module { 'jshint':    node_version => $node_version }
+  nodejs::module { 'uglify-js': node_version => $node_version }
+  nodejs::module { 'grunt-cli': node_version => $node_version }
+  nodejs::module { 'weinre':    node_version => $node_version }
 
-  # default ruby versions
+  # ruby
   $rb_version = "2.1.2"
   ruby::version { $rb_version: }
   ruby::version { '2.0.0': }

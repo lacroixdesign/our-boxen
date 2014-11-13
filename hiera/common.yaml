@@ -10,3 +10,9 @@
 # See https://github.com/boxen/puppet-ruby for docs
 ruby::provider: "chruby"
 ruby::build::ensure: 'v20141028'
+
+# Override socket location for Yosemite
+#
+#   https://github.com/boxen/puppet-mysql/issues/49
+#
+mysql::socket: "%{::boxen::config::datadir}/mysql/socket"
