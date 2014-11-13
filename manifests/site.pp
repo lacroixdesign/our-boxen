@@ -65,6 +65,7 @@ node default {
   include alfred
   include dropbox
   include bartender
+  include sequel_pro
 
   # db
   include postgresql

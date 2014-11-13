@@ -85,6 +85,7 @@ github "dropbox",       "1.4.1"
 github "imageoptim",    "0.0.2"
 
 github "transmit",       "1.0.2"
+github "sequel_pro",     "1.0.1"
 github "skype",          "1.0.9"
 github "github_for_mac", "1.0.3"
 github "fluid",          "1.0.2"
