@@ -10,4 +10,11 @@ class people::iamlacroix::applications {
   include fluid
   include imageoptim
   include applications::imagealpha
+  include notational_velocity::nvalt
+
+  include rubymine
+  include android::sdk
+  include android::tools
+  include android::platform_tools
+  include android::studio
 }
