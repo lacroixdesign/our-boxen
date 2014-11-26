@@ -59,6 +59,7 @@ node default {
   include memcached::lib
   include setup_php
   include applications::docker
+  include fig
 
   # core apps & tools
   include chrome

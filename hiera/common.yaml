@@ -11,6 +11,8 @@
 ruby::provider: "chruby"
 ruby::build::ensure: 'v20141028'
 
+fig::version: '1.0.1'
+
 # Override socket location for Yosemite
 #
 #   https://github.com/boxen/puppet-mysql/issues/49
