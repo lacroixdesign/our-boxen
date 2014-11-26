@@ -11,6 +11,7 @@ class people::iamlacroix::applications {
   include imageoptim
   include applications::imagealpha
   include notational_velocity::nvalt
+  include marked2
 
   include rubymine
   include android::sdk
