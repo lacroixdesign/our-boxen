@@ -58,6 +58,7 @@ node default {
   include memcached
   include memcached::lib
   include setup_php
+  include applications::docker
 
   # core apps & tools
   include chrome
@@ -75,6 +76,11 @@ node default {
   include postgresql
   include mysql
   include mongodb
+
+  # vagrant
+  class { 'vagrant':
+    version => '1.6.5'
+  }
 
   # node
   include nodejs::v0_8
