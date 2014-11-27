@@ -60,6 +60,7 @@ node default {
   include setup_php
   include applications::docker
   include fig
+  include config::nginx
 
   # core apps & tools
   include chrome
