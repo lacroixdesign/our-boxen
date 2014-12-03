@@ -57,10 +57,10 @@ node default {
   include java
   include memcached
   include memcached::lib
-  include setup_php
+  include config::php
+  include config::nginx
   include applications::docker
   include fig
-  include config::nginx
 
   # core apps & tools
   include chrome
