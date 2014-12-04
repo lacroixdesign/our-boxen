@@ -1,0 +1,7 @@
+DB_NAME="melaniejoyelmt_dev"
+DB_USER="root"
+DB_PASS=""
+DB_HOST="127.0.0.1:13306"
+
+CRAFT_ENV="development"
+SITE_URL="http://melaniejoyelmt.craft.dev/"
