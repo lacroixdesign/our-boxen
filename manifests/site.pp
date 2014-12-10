@@ -61,6 +61,7 @@ node default {
   include config::nginx
   include applications::docker
   include fig
+  include imagemagick
 
   # core apps & tools
   include chrome

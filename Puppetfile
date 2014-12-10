@@ -75,6 +75,7 @@ github "postgresql",    "3.0.1"
 github "mysql",         "1.99.18"
 github "mongodb",       "1.3.3"
 github "memcached",     "1.4.0", :repo => "mattheath/puppet-memcached"
+github "imagemagick",   "1.3.0"
 
 # Apps & Tools
 
