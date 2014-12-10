@@ -1,0 +1,39 @@
+# Template for Craft CMS based projects
+#
+# The template which nginx uses within a boxen::project can be overridden
+# to a specific template such as this one.
+#
+# You will likely need to change both the root and SCRIPT_FILENAME parameters below
+# to match your setup
+#
+server {
+  access_log <%= scope.lookupvar "nginx::config::logdir" %>/<%= @name %>.access.log main;
+  listen 80;
+  root <%= @repo_dir %>/public;
+  server_name <%= @server_name %>;
+
+  client_max_body_size 64M;
+
+  error_page 500 502 503 504 /50x.html;
+
+  location / {
+    index index.php index.html index.htm;
+    # This is cool because no php is touched for static content.
+    # include the "?$args" part so non-default permalinks doesn't break when using query string
+    try_files $uri $uri/ /index.php?$args;
+  }
+
+  location ~ \.php$ {
+    include <%= scope.lookupvar "nginx::config::configdir" %>/fastcgi_params;
+    keepalive_timeout 0;
+    fastcgi_pass unix:<%= scope.lookupvar "boxen::config::socketdir" %>/<%= @name %>;
+    # fastcgi_param SCRIPT_FILENAME <%= @repo_dir %>/public/index.php; # <-- This does not work
+    fastcgi_param PATH_INFO $fastcgi_script_name;
+
+    fastcgi_read_timeout 3600s;
+    client_body_timeout 3600s;
+    send_timeout 3600s;
+  }
+
+  include <%= @repo_dir %>/etc/nginx/development.conf;
+}

@@ -1,0 +1,21 @@
+WP_ENV=development
+
+DB_NAME=appreciationatwork_dev
+DB_USER="root"
+DB_PASSWORD=""
+DB_HOST="127.0.0.1:13306"
+
+# BASE_URL="http://lacroixdesign.fwd.wf"
+BASE_URL="http://appreciationatwork.dev"
+
+WP_HOME="{$BASE_URL}"
+WP_SITEURL="{$BASE_URL}/wp"
+
+AUTH_KEY='8xN``;QwN6FMwat|wzO.)xwA^(&TD(+Ifv#ju1EyH2*=^|S*=0rHBDEX&Vh;k#^A'
+SECURE_AUTH_KEY='9mDM8Q<|X^fZ$I9cY5-f82<<`!f.~6c7cs:?_bl-i@K@,U}<( ]cf2QzZpuJWB-5'
+LOGGED_IN_KEY='j,w|8il1%*S>!bc1yXmqS,x6FT|/x*#-N^xXBACGm1nQ-Vk~{|^M]5=4U)7%O4E$'
+NONCE_KEY='HVE}d>7?13ndiJr353qx]FCuRk6#K5Tnf+>=q+Mea{u60:dF4,$I)Mj$}b]!;W7@'
+AUTH_SALT='Vu?X[xSB0D? ]q)oKVB-EM4$]}HM|Zy-f-Sn=|glp&-0UJwwTIe`fgVW0N{W3RmG'
+SECURE_AUTH_SALT='KAKeV@e+oa?,i@4f9o?v.Ku/xh soD^sh^J1x{[-SE/?rzfHSTFLP~ _d19}umHf'
+LOGGED_IN_SALT='7|z_Z!{FHl,h*)]|?Osi08/Rmibt^T;L?:{1~ug%tgowOtYjO.p?Z{N!!C1NhN!M'
+NONCE_SALT='ARLomeVcL/,zb^|=)9-fH(Oq%{W&8wZ`}J$i>-+FG  z20t N#=vpd1ZAcPK=++E'

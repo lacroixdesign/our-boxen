@@ -36,7 +36,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
-    dnsmasq (2.0.0)
+    dnsmasq (2.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-dropbox
@@ -296,7 +296,7 @@ DEPENDENCIES
   bartender (= 1.0.0)
   boxen (= 3.7.0)
   chrome (= 1.2.0)
-  dnsmasq (= 2.0.0)
+  dnsmasq (= 2.0.1)
   dropbox (= 1.4.1)
   firefox (= 1.2.3)
   fluid (= 1.0.2)
