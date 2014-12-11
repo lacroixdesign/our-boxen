@@ -9,7 +9,6 @@ class projects::chicagofoodmagazine {
     # Common defaults
     server_name   => "${local_name}.craft.dev",
     mysql         => "${local_name}_dev",
-    dotenv        => true,
     # Stop editing
     nginx         => 'projects/shared/craft.conf.erb',
     php           => $config::php::default_php,

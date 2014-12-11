@@ -9,7 +9,6 @@ class projects::appreciationatwork {
     # Common defaults
     server_name   => "${local_name}.dev",
     mysql         => "${local_name}_dev",
-    dotenv        => true,
     # Stop editing
     nginx         => 'projects/shared/wordpress.conf.erb',
     php           => $config::php::default_php,
