@@ -12,7 +12,10 @@ class config::php {
 
   include php::composer
 
-  php::extension::memcached { "memcached for ${v55}": php => $v55 }
+  php::extension::memcached { "memcached for ${v55}":
+    php     => $v55,
+    version => '2.2.0'
+  }
   php::extension::memcached { "memcached for ${v54}": php => $v54 }
 
   php::extension::mcrypt { "mcrypt for ${v55}": php => $v55 }
