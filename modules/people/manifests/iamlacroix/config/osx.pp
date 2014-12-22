@@ -31,15 +31,4 @@ class people::iamlacroix::config::osx {
     notify  => Exec['killall SystemUIServer'],
     require => File[$screenshots_dir]
   }
-
-  # Change screenshots file type
-
-  boxen::osx_defaults { "change osx screenshots file type to jpg":
-    domain  => 'com.apple.screencapture',
-    key     => 'type',
-    type    => 'string',
-    value   => 'jpg',
-    user    => $::boxen_user,
-    notify  => Exec['killall SystemUIServer']
-  }
 }
