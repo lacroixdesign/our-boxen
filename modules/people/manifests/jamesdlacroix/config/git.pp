@@ -13,7 +13,7 @@ class people::jamesdlacroix::config::git {
   }
 
   git::config::global { 'difftool "Kaleidoscope".cmd':
-    value  => "ksdiff-wrapper git \\\"\$LOCAL\\\" \\\"\$REMOTE\\\""
+    value  => "ksdiff --partial-changeset --relative-path \\\"\$MERGED\\\" -- \\\"\$LOCAL\\\" \\\"\$REMOTE\\\""
   }
 
   git::config::global { 'mergetool.keepBackup':
