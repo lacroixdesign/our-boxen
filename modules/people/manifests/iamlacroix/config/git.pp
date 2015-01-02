@@ -44,6 +44,10 @@ class people::iamlacroix::config::git {
     value  => "remote -v"
   }
 
+  git::config::global { 'alias.aa':
+    value  => "add -A"
+  }
+
   git::config::global { 'alias.hist':
     value  => "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
   }
