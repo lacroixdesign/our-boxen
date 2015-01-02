@@ -6,6 +6,7 @@ class people::iamlacroix::applications {
   include transmit
   include skype
   include github_for_mac
+  include sourcetree
 
   include fluid
   include imageoptim
