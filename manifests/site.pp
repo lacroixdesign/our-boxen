@@ -102,7 +102,7 @@ node default {
   nodejs::module { 'weinre':    node_version => $node_version }
 
   # ruby
-  $rb_version = "2.1.2"
+  $rb_version = "2.1.4"
   ruby::version { $rb_version: }
   ruby::version { '2.0.0': }
   ruby::version { '1.9.3': }
@@ -114,17 +114,17 @@ node default {
   }
   ruby_gem { "foreman for ${version}":
     gem          => 'foreman',
-    version      => '~> 0.75.0',
+    version      => '~> 0.77.0',
     ruby_version => $rb_version,
   }
   ruby_gem { "forward for ${version}":
     gem          => 'forward',
-    version      => '~> 0.3.3',
+    version      => '~> 1.1.1',
     ruby_version => $rb_version,
   }
   ruby_gem { "scss-lint for ${version}":
     gem          => 'scss-lint',
-    version      => '~> 0.29.0',
+    version      => '~> 0.33.0',
     ruby_version => $rb_version,
   }
   ruby_gem { "sass for ${version}":
