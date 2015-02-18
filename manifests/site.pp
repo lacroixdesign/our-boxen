@@ -102,8 +102,9 @@ node default {
   nodejs::module { 'weinre':    node_version => $node_version }
 
   # ruby
-  $rb_version = "2.1.4"
+  $rb_version = "2.2.0"
   ruby::version { $rb_version: }
+  ruby::version { '2.1.4': }
   ruby::version { '2.0.0': }
   ruby::version { '1.9.3': }
 

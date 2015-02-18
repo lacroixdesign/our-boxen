@@ -9,7 +9,7 @@
 
 # See https://github.com/boxen/puppet-ruby for docs
 ruby::provider: "chruby"
-ruby::build::ensure: 'v20141028'
+ruby::build::ensure: 'v20150130'
 
 fig::version: '1.0.1'
 
