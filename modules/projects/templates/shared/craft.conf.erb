@@ -35,5 +35,5 @@ server {
     send_timeout 3600s;
   }
 
-  include <%= @repo_dir %>/etc/nginx/development.conf;
+  include <%= @repo_dir %>/etc/nginx/development.conf*;
 }
