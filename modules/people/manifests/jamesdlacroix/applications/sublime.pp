@@ -5,10 +5,10 @@ class people::jamesdlacroix::applications::sublime {
 
   $home = $people::jamesdlacroix::config::home
   $drop = $people::jamesdlacroix::config::dropbox_dir
-  $sync = $people::jamesdlacroix::config::sync_dir
+  $sync = $people::jamesdlacroix::config::dropbox_sync_dir
 
   $support_dir = "${home}/Library/Application Support/Sublime Text 3"
-  $sync_dirs = [ "${sync}/SublimeText3",
+  $dropbox_sync_dirs = [ "${sync}/SublimeText3",
                  "${sync}/SublimeText3/Packages",
                  "${sync}/SublimeText3/Installed Packages"
                ]
@@ -17,21 +17,21 @@ class people::jamesdlacroix::applications::sublime {
     ensure => "directory"
   }
 
-  file { $sync_dirs:
+  file { $dropbox_sync_dirs:
     ensure => "directory"
   }
 
   file { "${support_dir}/Packages":
     ensure  => link,
     target  => "${sync}/SublimeText3/Packages",
-    require => [ Package['Sublime Text'], File[$support_dir, $drop, $sync, $sync_dirs] ],
+    require => [ Package['Sublime Text'], File[$support_dir, $drop, $sync, $dropbox_sync_dirs] ],
     force   => "true"
   }
 
   file { "${support_dir}/Installed Packages":
     ensure  => link,
     target  => "${sync}/SublimeText3/Installed Packages",
-    require => [ Package['Sublime Text'], File[$support_dir, $drop, $sync, $sync_dirs] ],
+    require => [ Package['Sublime Text'], File[$support_dir, $drop, $sync, $dropbox_sync_dirs] ],
     force   => "true"
   }
 }
