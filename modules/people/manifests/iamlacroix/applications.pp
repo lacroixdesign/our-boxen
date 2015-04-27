@@ -1,6 +1,5 @@
 class people::iamlacroix::applications {
   include people::iamlacroix::applications::sublime
-  include people::iamlacroix::applications::atom_editor
 
   include cloudapp
   include transmit
@@ -14,6 +13,7 @@ class people::iamlacroix::applications {
   include notational_velocity::nvalt
   include marked2
 
+  include atom
   include rubymine
   include android::sdk
   include android::tools
