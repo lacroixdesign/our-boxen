@@ -52,7 +52,7 @@ github "openssl",     "1.0.0"
 github "phantomjs",   "2.3.0"
 github "pkgconfig",   "1.0.0"
 github "repository",  "2.3.0"
-github "ruby",        "8.3.0"
+github "ruby",        "8.5.2"
 github "stdlib",      "4.4.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
@@ -76,6 +76,7 @@ github "mysql",         "1.99.18"
 github "mongodb",       "1.3.3"
 github "memcached",     "1.4.0", :repo => "mattheath/puppet-memcached"
 github "imagemagick",   "1.3.0"
+github "elasticsearch", "2.8.0"
 
 # Apps & Tools
 

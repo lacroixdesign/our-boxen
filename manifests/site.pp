@@ -57,6 +57,7 @@ node default {
   include java
   include memcached
   include memcached::lib
+  include elasticsearch
   include config::php
   include config::nginx
   include applications::docker
