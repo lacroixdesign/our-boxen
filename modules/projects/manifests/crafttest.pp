@@ -7,7 +7,7 @@ class projects::crafttest {
     source        => 'git@github.com:iamlacroix/craft-gulp-boilerplate.git',
     dir           => "${boxen::config::srcdir}/_tools_/test.craft.dev",
     # Common defaults
-    server_name   => "test.craft.dev",
+    server_name   => "${local_name}.dev",
     mysql         => "craft_test",
     # Stop editing
     nginx         => 'projects/shared/craft.conf.erb',

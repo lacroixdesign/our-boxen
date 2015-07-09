@@ -7,7 +7,7 @@ class projects::chicagofoodmagazine {
     source        => 'git@bitbucket.org:lacroixdesign/chicago-food-magazine.git',
     dir           => "${boxen::config::srcdir}/${local_name}.com",
     # Common defaults
-    server_name   => "${local_name}.craft.dev",
+    server_name   => "${local_name}.dev",
     mysql         => "${local_name}_dev",
     # Stop editing
     nginx         => 'projects/shared/craft.conf.erb',
