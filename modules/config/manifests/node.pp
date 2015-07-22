@@ -35,10 +35,10 @@ class config::node {
     module => 'babel-eslint',
     node_version => $node_version
   }
-  npm_module { "browser-sync for ${node_version}":
-    module => 'browser-sync',
-    node_version => $node_version
-  }
+  # npm_module { "browser-sync for ${node_version}":
+  #   module => 'browser-sync',
+  #   node_version => $node_version
+  # }
   npm_module { "jshint for ${node_version}":
     module => 'jshint',
     node_version => $node_version
@@ -51,10 +51,10 @@ class config::node {
     module => 'grunt-cli',
     node_version => $node_version
   }
-  npm_module { "weinre for ${node_version}":
-    module => 'weinre',
-    node_version => $node_version
-  }
+  # npm_module { "weinre for ${node_version}":
+  #   module => 'weinre',
+  #   node_version => $node_version
+  # }
   npm_module { "svgo for ${node_version}":
     module => 'svgo',
     node_version => $node_version

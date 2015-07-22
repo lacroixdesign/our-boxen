@@ -14,7 +14,10 @@ class people::iamlacroix::applications {
   include marked2
 
   include atom
+  include alfred
+  include dropbox
   include rubymine
+  include bartender
   include android::sdk
   include android::tools
   include android::platform_tools

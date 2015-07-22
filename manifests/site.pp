@@ -72,10 +72,6 @@ node default {
   include iterm2::stable
   include virtualbox
   include heroku
-
-  include alfred
-  include dropbox
-  include bartender
   include sequel_pro
 
   # db
