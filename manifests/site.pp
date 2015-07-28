@@ -53,6 +53,7 @@ node default {
   include dnsmasq
   include git
   include hub
+  include brewcask
   include nginx
   include java
   include memcached
@@ -78,6 +79,12 @@ node default {
   include postgresql
   include mysql
   include mongodb
+
+  # brewcasks
+  package { 'markdown-service-tools': provider => 'brewcask' }
+  package { 'qlstephen': provider => 'brewcask' }
+  package { 'quicklook-json': provider => 'brewcask' }
+  package { 'qlimagesize': provider => 'brewcask' }
 
   # vagrant
   class { 'vagrant':
