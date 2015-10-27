@@ -1,7 +1,7 @@
 class config::node {
   include nodejs
 
-  $v = '4.0.0'
+  $v = '4.2.1'
 
   class { 'nodejs::global':
     version => $v
