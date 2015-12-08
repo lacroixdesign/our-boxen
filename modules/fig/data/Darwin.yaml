@@ -1,3 +1,0 @@
----
-fig::executable: "%{::boxen::config::bindir}/fig"
-fig::user:       "%{::boxen_user}"

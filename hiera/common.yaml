@@ -15,8 +15,6 @@ ruby::build::ensure: 'v20150130'
 "nodejs::build::ensure": "80cb791b63debce35110b55590cf3b9f953d72db"
 "nodejs::nodenv::ensure": "v0.3.0"
 
-fig::version: '1.0.1'
-
 # Override socket location for Yosemite
 #
 #   https://github.com/boxen/puppet-mysql/issues/49

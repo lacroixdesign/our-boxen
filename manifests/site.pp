@@ -63,8 +63,6 @@ node default {
   include config::ruby
   include config::php
   include config::nginx
-  include applications::docker
-  include fig
   include imagemagick
 
   # core apps & tools

@@ -1,3 +1,0 @@
----
-fig::ensure:  present
-fig::version: '1.0.0'
