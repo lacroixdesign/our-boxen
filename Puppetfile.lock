@@ -141,7 +141,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-mongodb
   specs:
-    mongodb (1.3.3)
+    mongodb (1.3.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-mysql
@@ -336,7 +336,7 @@ DEPENDENCIES
   marked2 (= 1.1.0)
   memcached (= 1.4.0)
   module_data (= 0.0.4)
-  mongodb (= 1.3.3)
+  mongodb (= 1.3.4)
   mysql (= 1.99.18)
   nginx (= 1.4.3)
   nodejs (= 5.0.5)
