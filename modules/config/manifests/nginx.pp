@@ -3,20 +3,14 @@ class config::nginx {
 
   $config_dir = $nginx::config::sitesdir
 
-  $fwd_template = 'config/forward.conf'
-  $fwd_config   = "${config_dir}/_dev_forwarding.conf"
-
-  $docker_template = 'config/docker.conf'
-  $docker_config   = "${config_dir}/_dev_docker.conf"
-
-  file { $fwd_config:
-    content => template($fwd_template),
+  file { "${config_dir}/_dev_forwarding.conf":
+    content => template('config/forward.conf'),
     require => File[$config_dir],
     notify  => Service['dev.nginx'],
   }
 
-  file { $docker_config:
-    content => template($docker_template),
+  file { "${config_dir}/_dev_docker.conf":
+    content => template('config/docker.conf'),
     require => File[$config_dir],
     notify  => Service['dev.nginx'],
   }
