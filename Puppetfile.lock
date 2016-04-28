@@ -101,7 +101,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.13.0)
+    homebrew (2.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -154,11 +154,6 @@ GITHUBTARBALL
     nginx (1.4.3)
 
 GITHUBTARBALL
-  remote: boxen/puppet-nodejs
-  specs:
-    nodejs (5.0.5)
-
-GITHUBTARBALL
   remote: boxen/puppet-notational_velocity
   specs:
     notational_velocity (1.1.2)
@@ -196,7 +191,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-postgresql
   specs:
-    postgresql (3.0.1)
+    postgresql (4.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -324,7 +319,7 @@ DEPENDENCIES
   github_for_mac (= 1.0.3)
   go (= 1.1.0)
   heroku (= 2.1.1)
-  homebrew (= 1.13.0)
+  homebrew (= 2.0.2)
   hub (= 1.4.1)
   imagemagick (= 1.3.0)
   imageoptim (= 0.0.2)
@@ -339,7 +334,6 @@ DEPENDENCIES
   mongodb (= 1.3.4)
   mysql (= 1.99.18)
   nginx (= 1.4.3)
-  nodejs (= 5.0.5)
   notational_velocity (= 1.1.2)
   ohmyzsh (= 1.0.0)
   openssl (= 1.0.0)
@@ -348,7 +342,7 @@ DEPENDENCIES
   phantomjs (= 2.3.0)
   php (= 2.0.1)
   pkgconfig (= 1.0.0)
-  postgresql (= 3.0.1)
+  postgresql (= 4.1.0)
   repository (= 2.3.0)
   ruby (= 8.5.2)
   rubymine (= 1.1.0)

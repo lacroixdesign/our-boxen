@@ -12,8 +12,8 @@ ruby::provider: "chruby"
 ruby::build::ensure: 'v20150130'
 
 # node
-"nodejs::build::ensure": "v2.0.3"
-"nodejs::nodenv::ensure": "v0.3.0"
+# "nodejs::build::ensure": "v2.0.3"
+# "nodejs::nodenv::ensure": "v0.3.0"
 
 # Override socket location for Yosemite
 #
