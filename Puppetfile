@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.7.0"
+github "boxen", "3.11.1"
 
 # Support for default hiera data in modules
 
@@ -77,7 +77,7 @@ github "mysql",         "1.99.18"
 github "mongodb",       "1.3.4"
 github "memcached",     "1.4.0", :repo => "mattheath/puppet-memcached"
 github "imagemagick",   "1.3.0"
-github "elasticsearch", "2.8.0"
+# github "elasticsearch", "2.8.0"
 
 # Apps & Tools
 

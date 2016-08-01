@@ -58,11 +58,11 @@ node default {
   include java
   include memcached
   include memcached::lib
-  include elasticsearch
+  # include elasticsearch
   include config::node
   include config::ruby
-  include config::php
   include config::nginx
+  include config::php
   include imagemagick
 
   # core apps & tools

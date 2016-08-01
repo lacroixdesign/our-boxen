@@ -7,7 +7,7 @@ class config::node {
   #   version => $v
   # }
   #
-  # nodejs::version { '0.12.7': }
+  # # nodejs::version { '0.12.7': }
   #
   # # npm modules
   #
@@ -26,5 +26,5 @@ class config::node {
   # npm_module { "svgo for Node ${v}": module => 'svgo', node_version => $v }
   # npm_module { "uglify-js for Node ${v}": module => 'uglify-js', node_version => $v }
   # npm_module { "yo for Node ${v}": module => 'yo', node_version => $v }
-
+  #
 }

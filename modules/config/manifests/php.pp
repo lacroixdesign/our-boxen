@@ -1,4 +1,17 @@
 class config::php {
+  include php::composer
+
+  $v7 = '7.0.6'
+  $default_php = $7
+
+  php::fpm { "${v7}": }
+  php::extension::mcrypt { "mcrypt for ${v7}": php => $v7 }
+
+  # php::extension::memcached { "memcached for ${v7}":
+  #   php     => $v7,
+  #   version => '2.2.0'
+  # }
+
   # $v55 = '5.5.30'
   # # $v7 = '7.0.0'
   #

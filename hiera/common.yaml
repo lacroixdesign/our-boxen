@@ -15,6 +15,9 @@ ruby::build::ensure: 'v20150130'
 # "nodejs::build::ensure": "v2.0.3"
 # "nodejs::nodenv::ensure": "v0.3.0"
 
+php::config::configure_params:
+  '7.0.6': '--with-openssl=/opt/boxen/homebrew/opt/openssl'
+
 # Override socket location for Yosemite
 #
 #   https://github.com/boxen/puppet-mysql/issues/49
