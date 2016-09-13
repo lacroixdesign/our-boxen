@@ -45,7 +45,7 @@ github "git",         "2.7.9"
 github "go",          "1.1.0"
 github "homebrew",    "2.0.2"
 github "brewcask",    "0.0.6"
-github "hub",         "1.4.1"
+# github "hub",         "1.4.1"
 github "inifile",     "1.1.1", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",       "1.4.3"
 # github "nodejs",      "5.0.5"
@@ -77,7 +77,6 @@ github "mysql",         "1.99.18"
 github "mongodb",       "1.3.4"
 github "memcached",     "1.4.0", :repo => "mattheath/puppet-memcached"
 github "imagemagick",   "1.3.0"
-# github "elasticsearch", "2.8.0"
 
 # Apps & Tools
 

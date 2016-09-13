@@ -52,13 +52,11 @@ node default {
   # core modules, needed for most things
   include dnsmasq
   include git
-  include hub
   include brewcask
   include nginx
   include java
   include memcached
   include memcached::lib
-  # include elasticsearch
   include config::node
   include config::ruby
   include config::nginx
