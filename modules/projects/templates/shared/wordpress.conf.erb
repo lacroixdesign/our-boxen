@@ -26,7 +26,8 @@ server {
   location ~ \.php$ {
     include <%= scope.lookupvar "nginx::config::configdir" %>/fastcgi_params;
     keepalive_timeout 0;
-    fastcgi_pass unix:<%= scope.lookupvar "boxen::config::socketdir" %>/<%= @name %>;
+    # fastcgi_pass unix:<%= scope.lookupvar "boxen::config::socketdir" %>/<%= @name %>;
+    fastcgi_pass unix:<%= scope.lookupvar "boxen::config::socketdir" %>/<%= scope.lookupvar "config::php_version::default" %>;
     # fastcgi_param SCRIPT_FILENAME <%= @repo_dir %>/public/index.php; # <-- This does not work
     fastcgi_param PATH_INFO $fastcgi_script_name;
 

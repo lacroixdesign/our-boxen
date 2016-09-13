@@ -1,6 +1,7 @@
 # 5lovelanguages
 class projects::fivelovelanguages {
-  require config::php
+  # require config::php
+  require config::php_version
 
   $local_name = '5lovelanguages'
 
@@ -12,6 +13,6 @@ class projects::fivelovelanguages {
     mysql         => "${local_name}_dev",
     # Stop editing
     nginx         => 'projects/shared/wordpress.conf.erb',
-    php           => $config::php::default_php,
+    php           => $config::php_version::default,
   }
 }

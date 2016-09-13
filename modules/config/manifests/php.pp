@@ -1,8 +1,9 @@
 class config::php {
   include php::composer
+  require config::php_version
 
-  $v7 = '7.0.6'
-  $default_php = $7
+  $v7 = $config::php_version::v7
+  # $default_php = '7.0.6'
 
   php::fpm { "${v7}": }
   php::extension::mcrypt { "mcrypt for ${v7}": php => $v7 }
