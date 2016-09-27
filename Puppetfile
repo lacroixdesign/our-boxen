@@ -74,7 +74,7 @@ github "php",           "2.0.1"
 github "fonts",         "0.0.3"
 github "postgresql",    "4.1.0"
 github "mysql",         "1.99.18"
-github "mongodb",       "1.3.4"
+github "mongodb",       "1.5.0"
 github "memcached",     "1.4.0", :repo => "mattheath/puppet-memcached"
 github "imagemagick",   "1.3.0"
 
